@@ -10,9 +10,7 @@
 - Show product in your own design and click show a single product on
 a dynamic route .
 - Get Product Api is : https://admin.refabry.com/api/all/product/get
-- Image Url is like:
-
-https://admin.refabry.com/storage/product/7681_1734110373.webp
+- Image Url is like: https://admin.refabry.com/storage/product/7681_1734110373.webp
 
 ## Task2 (optional ):
 - Place Order
