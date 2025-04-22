@@ -1,18 +1,12 @@
-
-
-
-const API_URL = "https://admin.refabry.com/api/all/product/get";
-
 export const getAllProducts = async () => {
-  const res = await fetch(API_URL);
+  const res = await fetch("https://admin.refabry.com/api/all/product/get");
   if (!res.ok) {
     throw new Error("Failed to fetch products");
   }
   const data = await res.json();
 
-  // The products are inside data.data (pagination structure)
   if (data && data.data && Array.isArray(data.data.data)) {
-    return data.data.data; // return the actual products array
+    return data.data.data;
   }
 
   throw new Error("Could not find products array in API response");
@@ -22,7 +16,6 @@ export const getProductById = async (id) => {
   const products = await getAllProducts();
 
   if (!Array.isArray(products)) {
-    console.error("Products is not an array:", products);
     return null;
   }
 

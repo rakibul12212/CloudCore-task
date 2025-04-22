@@ -16,13 +16,11 @@ const ProductCard = ({ product }) => {
           priority
         />
       </div>
-      <div className="p-4">
+      <div className="p-4 bg-gray-100">
         <h3 className="text-lg font-semibold text-gray-900 truncate">
           {product.name}
         </h3>
-        <p className="mt-3 text-xl font-bold text-indigo-600">
-          ${product.price}
-        </p>
+        <p className=" text-xl font-bold ">${product.price}</p>
       </div>
     </Link>
   );

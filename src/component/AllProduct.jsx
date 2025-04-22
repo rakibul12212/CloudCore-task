@@ -1,6 +1,3 @@
-
-
-
 import ProductCard from "./ProductCard";
 
 const AllProduct = ({ products }) => {
