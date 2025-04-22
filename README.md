@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# cloud-core-task
 
-First, run the development server:
+
+
+Requirements:
+○ Task1 :
+○ Create a responsive user friendly website where display products
+○ get data using AXIOS/ Fetch
+○ Show product in your own design and click show a single product on
+a dynamic route .
+○ Get Product Api is : https://admin.refabry.com/api/all/product/get
+○ Image Url is like:
+
+https://admin.refabry.com/storage/product/7681_1734110373.webp
+
+○ Task2 (optional ):
+○ Place Order
+○ Order place Api is :
+https://admin.refabry.com/api/public/order/create
+○ For place an order data structure is like
+"product_ids": "1,2",
+"s_product_qty": "2,1",
+"c_phone": "01734252112",
+"c_name": "test",
+"courier": "steadfast",
+"address": "mirpur 12 ramzanessamarket",
+"advance": null,
+"cod_amount": "1250",
+"discount_amount": null,
+"delivery_charge": "80",
+
+Features:
+
+○ Responsive Design:
+○ Build a responsive UI that works seamlessly across devices (desktop, tablet, and
+mobile) use Tailwind Css
+○ Use CSS Flexbox or Grid for layout, and ensure that elements adjust properly
+based on the screen size.
+
+○ Performance:
+○ Make sure that the application is optimized for performance and does not have
+any unnecessary re-renders.
+○ The page should load quickly and be smooth to interact with.
+○ Use redux toolkit
+○ Code Quality:
+○ Write clean, readable, and maintainable code.
+○ Use best practices in React or Next.js, and ensure that components are reusable
+where applicable.
+○ Use redux toolkit
+
+
+
+---
+
+🚀 Features
+📦 Product List Page – Fetches all products from API and displays in a responsive grid.
+
+🔍 Product Detail Page – View detailed information for a specific product.
+
+⚡ Redux Toolkit – Global state management with createAsyncThunk for async data fetching.
+
+🔄 Loading State Handling – Smooth loading experience using conditional rendering.
+
+🧾 Optional Order Placement – Submit order details via provided API.
+
+💅 Tailwind CSS – Fully responsive and clean UI.
+
+🌐 Dynamic Routing – Each product has its own unique detail page.
+---
+
+
+
+
+
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  https://github.com/rakibul12212/CloudCore-task.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+  cd my-project
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔗 https://cloud-core-task.vercel.app/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
