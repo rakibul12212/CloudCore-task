@@ -17,16 +17,16 @@ a dynamic route .
 - Order place Api is :
 https://admin.refabry.com/api/public/order/create
 - For place an order data structure is like
--- "product_ids": "1,2",
--- "s_product_qty": "2,1",
--- "c_phone": "01734252112",
--- "c_name": "test",
--- "courier": "steadfast",
--- "address": "mirpur 12 ramzanessamarket",
--- "advance": null,
--- "cod_amount": "1250",
--- "discount_amount": null,
--- "delivery_charge": "80",
+   "product_ids": "1,2",
+   "s_product_qty": "2,1",
+   "c_phone": "01734252112",
+   "c_name": "test",
+   "courier": "steadfast",
+   "address": "mirpur 12 ramzanessamarket",
+   "advance": null,
+   "cod_amount": "1250",
+   "discount_amount": null,
+   "delivery_charge": "80",
 
 # Features:
 
