@@ -12,10 +12,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Container>
-          <Header />
-          <ReduxProvider>{children}</ReduxProvider>
-        </Container>
+        <ReduxProvider>
+          <Container>
+            <Header />
+            {children}
+          </Container>
+        </ReduxProvider>
       </body>
     </html>
   );

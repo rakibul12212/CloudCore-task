@@ -34,16 +34,19 @@ const ProductDetails = () => {
             <p className="mb-6 text-gray-700 whitespace-pre-line text-xs">
               {product.short_desc}
             </p>
-            <p className="text-2xl font-semibold ">
-              ${product.price}
-            </p>
+            <div className="flex items-center gap-x-5">
+              <p className="text-2xl font-semibold ">${product.price}</p>
+              <div className="bg-black hover:bg-gray-500 px-3 py-1 text-white text-sm rounded">
+                <Link href="/">Order Now</Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="text-center py-10">
         <Link
           href="/"
-          className="px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white"
+          className="px-4 py-2 bg-gray-300 hover:bg-gray-500 hover:text-white"
         >
           Back to Home
         </Link>

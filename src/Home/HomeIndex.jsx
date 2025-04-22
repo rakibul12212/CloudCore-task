@@ -18,8 +18,7 @@ const Home = () => {
     }
   }, [status, dispatch]);
 
-  if (status === "loading")
-    return <p>Loading...</p>;
+  if (status === "loading") return <p>Loading...</p>;
   if (status === "failed")
     return <p className="text-center py-20 text-red-600">{error}</p>;
   if (!products.length)
