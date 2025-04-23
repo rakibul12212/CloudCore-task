@@ -1,9 +1,9 @@
 
-# cloud-core-task
+## cloud-core-task
 
 
 
-## Requirements:
+# Requirements:
 # Task1 :
 - Create a responsive user friendly website where display products
 - get data using AXIOS/ Fetch
@@ -12,7 +12,7 @@ a dynamic route .
 - Get Product Api is : https://admin.refabry.com/api/all/product/get
 - Image Url is like: https://admin.refabry.com/storage/product/7681_1734110373.webp
 
-## Task2 (optional ):
+# Task2 (optional ):
 - Place Order
 - Order place Api is :
 https://admin.refabry.com/api/public/order/create
@@ -51,7 +51,7 @@ where applicable.
 
 ---
 
-🚀 Features
+## 🚀 Features
 📦 Product List Page – Fetches all products from API and displays in a responsive grid.
 
 🔍 Product Detail Page – View detailed information for a specific product.
