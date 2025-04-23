@@ -1,6 +1,6 @@
 import Home from "@/Home/HomeIndex";
 
-export default function HomePage() {
+const HomePage = () => {
   return (
     <div className="px-5 md:px-10 2xl:px-20 min-h-screen">
       <p className="text-4xl font-semibold py-20 text-center">Products</p>
@@ -9,5 +9,6 @@ export default function HomePage() {
       </div>
     </div>
   );
-}
+};
 
+export default HomePage;

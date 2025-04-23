@@ -3,7 +3,7 @@
 import { useSelector } from "react-redux";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -13,6 +13,11 @@ const ProductDetails = () => {
   if (!product) {
     return <p className="p-8 text-center text-red-600">Product not found</p>;
   }
+
+  const router = useRouter();
+  const handleOrderClick = () => {
+    router.push(`/order/${id}`);
+  };
 
   return (
     <div>
@@ -37,19 +42,16 @@ const ProductDetails = () => {
             <div className="flex items-center gap-x-5">
               <p className="text-2xl font-semibold ">${product.price}</p>
               <div className="bg-black hover:bg-gray-500 px-3 py-1 text-white text-sm rounded">
-                <Link href="/">Order Now</Link>
+                <button
+                  onClick={handleOrderClick}
+                  className="bg-black hover:bg-gray-500 px-3 py-1 text-white text-sm rounded"
+                >
+                  Order Now
+                </button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="text-center py-10">
-        <Link
-          href="/"
-          className="px-4 py-2 bg-gray-300 hover:bg-gray-500 hover:text-white"
-        >
-          Back to Home
-        </Link>
       </div>
     </div>
   );
