@@ -4,8 +4,8 @@ import { ReduxProvider } from "@/redux/ReduxProvider";
 import Container from "@/component/UI/Container";
 
 export const metadata = {
-  title: "My Product App",
-  description: "Product app with Redux Toolkit",
+  title: "CloudCore",
+  description: "CloudCore app with Redux Toolkit,Nextjs",
 };
 
 export default function RootLayout({ children }) {

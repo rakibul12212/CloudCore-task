@@ -1,35 +1,38 @@
 
 export const getAllProducts = async () => {
-  const res = await fetch("https://admin.refabry.com/api/all/product/get", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({}), 
-  });
+  try {
+    const res = await fetch("https://admin.refabry.com/api/all/product/get", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({}), 
+      cache: "no-store", 
+    });
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch products");
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+
+    const data = await res.json();
+
+    if (data?.data?.data && Array.isArray(data.data.data)) {
+      return data.data.data;
+    }
+
+    throw new Error("Unexpected response structure from API.");
+  } catch (error) {
+    console.error("Error fetching products:", error.message);
+    return []; 
   }
-
-  const data = await res.json();
-
-  if (data && data.data && Array.isArray(data.data.data)) {
-    return data.data.data;
-  }
-
-  throw new Error("Could not find products");
 };
 
 
 export const getProductById = async (id) => {
   const products = await getAllProducts();
 
-  if (!Array.isArray(products)) {
-    return null;
-  }
-
   return (
-    products.find((product) => product.id.toString() === id.toString()) || null
+    products.find((product) => product.id?.toString() === id?.toString()) ||
+    null
   );
 };
