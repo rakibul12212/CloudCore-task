@@ -77,7 +77,7 @@ where applicable.
 Clone the project
 
 ```bash
-  https://github.com/rakibul12212/CloudCore-task.git
+  git clone https://github.com/rakibul12212/CloudCore-task.git
 ```
 
 Go to the project directory
